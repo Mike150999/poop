@@ -27,6 +27,7 @@
 	position: relative;
 	left: 100%;
 	animation: skyMov 20s infinite linear;
+	margin-top: 35px;
 }
 
 #dino {
