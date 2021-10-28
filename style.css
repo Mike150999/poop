@@ -1,12 +1,18 @@
 .game {
-	width: 600px;
+	padding-left:100px ;
 	height: 200px;
 	border-bottom: 1px solid #000;
 	margin: auto;
 }
+@media (max-width:411px) {
+	.game{
+		padding: 10px;
+	}
+}
 .sky {
-	width: 600px;
+	width: 100%;
 	margin: auto;
+	overflow-x: hidden;
 }
 #sky {
 	width: 50px;
@@ -14,7 +20,7 @@
 	background-image: url(./img/sky.png);
 	background-size: 50px 50px;
 	position: relative;
-	left: 580px;
+	left: 100%;
 	animation: skyMov 20s infinite linear;
 }
 
@@ -27,23 +33,23 @@
 	top: 150px;
 }
 
-#cactus {
+.cactus {
 	width: 40px;
 	height: 40px;
 	background-image: url(./img/poop.png);
 	background-size: 40px 40px;
 	position: relative;
 	top: 110px;
-	left: 580px;
+	left: 100%;
 	animation: cactusMov 1.3s infinite linear;
 }
 
 @keyframes cactusMov {
 	0% {
-		left: 580px;
+		left: 100%;
 	}
 	100% {
-		left: -20px;
+		left: -100px;
 	}
 }
 @keyframes skyMov {
@@ -51,7 +57,7 @@
 		left: 800px;
 	}
 	100% {
-		left: -20px;
+		left: 0%;
 	}
 }
 
@@ -75,4 +81,33 @@
 	100% {
 		top: 150px;
 	}
+}
+.score__box{
+	display: flex;
+	width: 200px;
+	margin: 0 auto;
+}
+.score {
+	font-size: 40px;
+}
+#score{
+	margin-left:20px ;
+}
+.restart{
+	width: 100%;
+	height: 100%;
+	font-size: 50px;
+	position: absolute;
+	color: white;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 100px;
+	display: none;
+	background:black;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.restart__active{
+	display: block;
 }
