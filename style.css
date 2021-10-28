@@ -1,12 +1,16 @@
 .game {
-	padding-left:100px ;
+	padding-left: 100px;
 	height: 200px;
 	border-bottom: 1px solid #000;
 	margin: auto;
 }
-@media (max-width:411px) {
-	.game{
-		padding: 10px;
+.sky__block {
+	background-image: url(./img/sky--2.png);
+	background-size: cover;
+}
+@media (max-width: 411px) {
+	.game {
+		padding-left: 10px;
 	}
 }
 .sky {
@@ -14,6 +18,7 @@
 	margin: auto;
 	overflow-x: hidden;
 }
+
 #sky {
 	width: 50px;
 	height: 50px;
@@ -40,13 +45,13 @@
 	background-size: 40px 40px;
 	position: relative;
 	top: 110px;
-	left: 100%;
+	left: 100vw;
 	animation: cactusMov 1.3s infinite linear;
 }
 
 @keyframes cactusMov {
 	0% {
-		left: 100%;
+		left: 100vw;
 	}
 	100% {
 		left: -100px;
@@ -54,10 +59,18 @@
 }
 @keyframes skyMov {
 	0% {
-		left: 800px;
+		left: 100vw;
 	}
 	100% {
-		left: 0%;
+		left: 0vw;
+	}
+}
+@keyframes woodMov {
+	0% {
+		left: 100vw;
+	}
+	100% {
+		left: 0vw;
 	}
 }
 
@@ -82,7 +95,7 @@
 		top: 150px;
 	}
 }
-.score__box{
+.score__box {
 	display: flex;
 	width: 200px;
 	margin: 0 auto;
@@ -90,10 +103,10 @@
 .score {
 	font-size: 40px;
 }
-#score{
-	margin-left:20px ;
+#score {
+	margin-left: 20px;
 }
-.restart{
+.restart {
 	width: 100%;
 	height: 100%;
 	font-size: 50px;
@@ -104,10 +117,10 @@
 	text-align: center;
 	padding-top: 100px;
 	display: none;
-	background:black;
+	background: black;
 	opacity: 0.5;
 	cursor: pointer;
 }
-.restart__active{
+.restart__active {
 	display: block;
 }
