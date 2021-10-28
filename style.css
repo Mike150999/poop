@@ -20,14 +20,23 @@
 }
 
 #sky {
-	width: 50px;
+	width: 100px;
 	height: 50px;
-	background-image: url(./img/sky.png);
-	background-size: 50px 50px;
+	background-image: url(./img/sky-mario.png);
+	background-size: 100px 50px;
 	position: relative;
 	left: 100%;
 	animation: skyMov 20s infinite linear;
 	margin-top: 35px;
+}
+#sky-mario {
+	width: 200px;
+	height: 100px;
+	background-image: url(./img/mario.png);
+	background-size: 200px 100px;
+	position: relative;
+	left: 100%;
+	animation: skyMov 30s infinite linear;
 }
 
 #dino {
