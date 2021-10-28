@@ -28,7 +28,6 @@ let i = 0;
 let score = setInterval(count, 1300);
 
 function move() {
-	let cactus = document.querySelector('.cactus');
 	let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
 	let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 	if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
@@ -39,6 +38,7 @@ function move() {
 		restart.classList.add('restart__active');
 		let audio = new Audio('audio/audio.mp3');
 		audio.play();
+		
 	}
 }
 
